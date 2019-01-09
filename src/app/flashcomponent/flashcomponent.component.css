@@ -5,18 +5,18 @@
     border: 5px solid #245689;
     padding: 25px;
     margin: 55px;
-    position: absolute;
+    /* position: absolute; */
   }
 
-  #flash-two {
+  /* #flash-two {
     background-color: lightgrey;
     width: 400px;
     height: 300px;
     border: 5px solid #245689;
     padding: 25px;
     margin: 55px;
-    float: right;
-    position: relative;
-  }
+    float: right; */
+    /* position: relative; */
+  
 
   

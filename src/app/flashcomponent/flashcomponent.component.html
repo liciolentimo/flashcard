@@ -1,10 +1,13 @@
-<div id="flash-one" *ngFor='let card of flashcards;let i = index'>
-  <li >{{flash.name}}</li>
+ <div id="flash-one" *ngFor='let flashcard of flashcards;let i = index'>
+  <li >{{flashcard.name}}</li>
   <button  (click)='toggleDetails(i)'>Toggle Details</button>
-</div>
+  <app-flashdetails *ngIf="flashcard.showDescription" [flashcard]='flashcards'></app-flashdetails>
+ </div>
 
-<div id="flash-two">
-  <p>Title</p>
-  <p>Description</p>
-</div>
+<!-- <div id="flash-two" *ngFor='let flashcard of flashcards;let i = index'>
+  <li>{{flashcard.name}}</li>
+  <button  (click)='toggleDetails(i)'>Toggle Details</button>
+  <app-flashdetails *ngIf="flashcard.showDescription" [flashcard]='flashcards'></app-flashdetails>
+</div> -->
+
 
