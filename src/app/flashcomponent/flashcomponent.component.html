@@ -1,6 +1,6 @@
-<div id="flash-one">
-  <p>Title</p>
-  <p>Description</p>
+<div id="flash-one" *ngFor='let card of flashcards;let i = index'>
+  <li >{{flash.name}}</li>
+  <button  (click)='toggleDetails(i)'>Toggle Details</button>
 </div>
 
 <div id="flash-two">
